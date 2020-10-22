@@ -14,7 +14,7 @@ Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elind�
  - Az alkalmazás egyszerre betölt 10 palettát a Colourlovers-ről
  - Az alkalmazás scroll eventre betölt újabb 10 palettát
  
-# Tecnikai segítség
+# Technikai segítség
 **API hívás**:  `http://www.colourlovers.com/api/palettes/new?format=json`
 
 **API válasz:**
@@ -49,7 +49,7 @@ Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elind�
  - Dátum
  - Értékelések (likes)
  
-# Tecnikai feltételek
+# Technikai feltételek
  - Az alkalmazás `npm install / npm run` paranccsal indítható
  - Az alkalmazás a következő portok valamelyikét használja: **3000, 8000, 8080, 8888**
  - Mobile-first, responsive
