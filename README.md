@@ -51,7 +51,7 @@ Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elind�
  
 # Technikai feltételek
  - Az alkalmazás `npm install / npm run` paranccsal indítható
- - Az alkalmazás a **3000** portot használja
+ - Az alkalmazás a **3000-es** portot használja
  - Mobile-first, responsive
  - A megvalósításhoz **NEM** használható jQuery!
  - A kód Githubon elérhető, jól dokumentált, hibamentesen működik
