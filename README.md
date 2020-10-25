@@ -7,7 +7,7 @@ A feladat egy Node.js szerveren futó colorpicker app fejlesztése a Colourlover
 
 # Todo
 
-Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elindít egy lokális szervert (8000, 8080 vagy 8888 porton) a következő feltételekkel:
+Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elindít egy lokális szervert (3000 porton) a következő feltételekkel:
 
  - Az alkalmazás böngésző független, a népszerű böngészőkön hibátlanul fut
  - Az alkalmazás **mobile-first** és responsive szemlélettel készült
@@ -51,10 +51,10 @@ Fejlessz egy olyan appot, ami egy `npm install` / `npm run` parancs után elind�
  
 # Technikai feltételek
  - Az alkalmazás `npm install / npm run` paranccsal indítható
- - Az alkalmazás a következő portok valamelyikét használja: **3000, 8000, 8080, 8888**
+ - Az alkalmazás a **3000** portot használja
  - Mobile-first, responsive
  - A megvalósításhoz **NEM** használható jQuery!
- - A kód Githubon elérhető, jól dokumentált
+ - A kód Githubon elérhető, jól dokumentált, hibamentesen működik
  
  A fejlesztésre a feladat átadásától számítva 2 nap áll rendelkezésre.
 
