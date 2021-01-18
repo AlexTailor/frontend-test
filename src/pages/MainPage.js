@@ -1,9 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
 import { PalettesContext } from "../contexts/PalettesProvider";
 import PaletteCard from "../components/PaletteCard";
 
 export default function MainPage() {
+  const [page] = useState(1);
   const { palettes, fetchPalettes } = useContext(PalettesContext);
 
   useEffect(() => {
