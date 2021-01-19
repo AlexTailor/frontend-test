@@ -1,14 +1,14 @@
-import "./App.css";
 import MainPage from "./pages/MainPage";
 import { PalettesProvider } from "./contexts/PalettesProvider";
+import { Container } from "@material-ui/core";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <PalettesProvider>
         <MainPage />
       </PalettesProvider>
-    </div>
+    </Container>
   );
 }
 

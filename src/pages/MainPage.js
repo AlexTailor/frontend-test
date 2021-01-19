@@ -2,16 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
 import { PalettesContext } from "../contexts/PalettesProvider";
 import PaletteCard from "../components/PaletteCard";
-import styled from "styled-components";
-
-const Content = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
-  overflow: auto;
-`;
+import { Grid } from "@material-ui/core";
+import { useStyles } from "../StyledComponents";
 
 export default function MainPage() {
   const { palettes, fetchPalettes } = useContext(PalettesContext);
@@ -27,18 +19,19 @@ export default function MainPage() {
 
   useEffect(() => {
     fetchPalettes(firstIndex);
-    console.log(palettes);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [firstIndex]);
 
+  const classes = useStyles();
+
   return (
-    <>
-      <Typography variant="h1">Colour Picker</Typography>
-      <Content onScroll={handleScroll}>
+    <Grid className={classes.container} justify="center">
+      <Typography variant="h2">Colour Picker</Typography>
+      <Grid item className={classes.content} onScroll={handleScroll}>
         {palettes.map((palette, index) => (
           <PaletteCard key={palette.id} index={index} palette={palette} />
         ))}
-      </Content>
-    </>
+      </Grid>
+    </Grid>
   );
 }
