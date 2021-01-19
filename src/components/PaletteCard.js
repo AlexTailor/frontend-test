@@ -9,7 +9,7 @@ export default function PaletteCard(props) {
         {props.palette.title}
       </Typography>
       <Typography variant="h5" component="h1">
-        {props.palette.userName}
+        by {props.palette.userName}
       </Typography>
       <Typography variant="h5" component="h1">
         {props.palette.dateCreated}
