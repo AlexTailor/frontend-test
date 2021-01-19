@@ -6,8 +6,8 @@ export const PalettesContext = createContext();
 export function PalettesProvider(props) {
   const [palettes, setPalettes] = useState([]);
 
-  function fetchPalettes() {
-    fetchPalettesApi().then((data) => setPalettes(data.data));
+  function fetchPalettes(firstIndex) {
+    fetchPalettesApi(firstIndex).then((data) => setPalettes(data.data));
   }
 
   return (
